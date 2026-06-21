@@ -1,35 +1,38 @@
-# CPT112 - Discrete Structures (Assignment 1)
+# CPT111 - Principles of Programming (Assignment 2)
 
-This repository contains the C++ implementation for **CPT112: Discrete Structures - Assignment 1** (Academic Session 2024/2025) at Universiti Sains Malaysia (USM).
+This repository contains the C++ implementation for **CPT111: Principles of Programming - Assignment 2** (Academic Session 2023/2024) at Universiti Sains Malaysia (USM).
 
 ## Course Details
-- **Course Code:** CPT112
-- **Course Name:** Discrete Structures
-- **Semester:** Year 1, Semester 2 (2024/2025)
+- **Course Code:** CPT111
+- **Course Name:** Principles of Programming
+- **Semester:** Year 1, Semester 1 (2023/2024)
 
 ---
 
 ## Assignment Overview
 
-The assignment applies discrete mathematics concepts computationally in C++:
-1. **Set Theory Operations:**
-   - Union, Intersection, Difference, and Complement of sets.
-   - Checking subset relationships.
-2. **Relations and Logic:**
-   - Representing relations between sets using C++ data structures.
-   - Checking reflexive, symmetric, and transitive properties.
-3. **Program Output:** Displaying set membership, operation results, and relation properties in a formatted console output.
+The assignment is an interactive C++ console application that demonstrates OOP principles:
+1. **Object-Oriented Programming (OOP):**
+   - Classes, private member encapsulation, and constructors.
+   - Inheriting `Pension_Info` from `Service_Info` and composing the `Employee` object.
+   - Declaring `friend` functions for input handling.
+2. **Pension Eligibility Rules:**
+   - Age must be $\ge 40$ years old.
+   - Years of service must be $\ge 10$ years.
+3. **Financial Estimation Formulas:**
+   - Monthly Pension = $0.00167 \times \text{Service Months} \times \text{Last Salary}$.
+   - Gratuity = $0.075 \times \text{Service Months} \times \text{Last Salary}$.
 
 ---
 
 ## What I Did
-- Implemented all set operations and relation checks in [`Asgn1_22304588_AHMED_H_M_.cpp`](Asgn1_22304588_AHMED_H_M_.cpp).
+- Developed the complete OOP-structured pension calculation console program in [`Asgn1_22304588_AHMED_H_M_.cpp`](Asgn1_22304588_AHMED_H_M_.cpp).
 - Referenced the coursework submission report: [`CW1_22304588.pdf`](CW1_22304588.pdf).
 
 ---
 
 ## Tools & Tech Stack
-- **Language:** C++ (standard library, arrays, STL sets)
+- **Language:** C++ (Standard library, inheritance, friend functions, encapsulation)
 - **IDE/Compiler:** GCC / MinGW
 
 ---
@@ -38,13 +41,13 @@ The assignment applies discrete mathematics concepts computationally in C++:
 
 1. Compile the program:
    ```bash
-   g++ Asgn1_22304588_AHMED_H_M_.cpp -o sets_relations
+   g++ Asgn1_22304588_AHMED_H_M_.cpp -o pension_app
    ```
 2. Run the executable:
    ```bash
-   ./sets_relations
+   ./pension_app
    ```
-3. The program will demonstrate set operations and print the relation properties to console output.
+3. Input employee information, appointment details, salary/allowances, and pension dates to view the computed eligibility status and estimates.
 
 ---
 
@@ -92,4 +95,3 @@ Total Allowance: RM800
 Select an option: 5
 Exiting the application. Goodbye!
 ```
-
